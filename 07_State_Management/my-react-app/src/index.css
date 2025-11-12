@@ -13,6 +13,20 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+[data-theme="dark"] {
+  --background: #374142;
+  --headerBackground:#4a5759;
+  --headerTitle: #f7e1d7;
+  --headerSubtitle: #dedbd2;
+}
+
+[data-theme="light"] { 
+  --background: #f7e1d7;
+  --headerBackground: #edafb8;
+  --headerTitle: #374142;
+  --headerSubtitle: #4a5759;
+}
+
 a {
   font-weight: 500;
   color: #646cff;

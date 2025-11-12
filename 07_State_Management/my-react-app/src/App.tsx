@@ -3,14 +3,15 @@ import './App.css'
 import type { BlogPost } from './types/BlogPost'
 import * as Constants from './data/BlogpostsData'
 import PostCard from './components/PostCard'
+import AppHeader from './components/AppHeader'
+import { ThemeProvider } from './context/ThemeContext'
 
 function App() {
   const blogPosts: BlogPost[] = Constants.blogPosts;
   return (
+    <ThemeProvider>
     <div className="blogPage">
-      <div className="header">
-      <h1 className="headerTitle">My Personal Blog</h1>
-      </div>
+      <AppHeader/>
       <div className="content">
         <div className="content-gridContainer">
           {blogPosts.map((post: BlogPost, index) => (
@@ -20,6 +21,7 @@ function App() {
         </div>
       </div>
     </div>
+    </ThemeProvider>
   );
 }
 

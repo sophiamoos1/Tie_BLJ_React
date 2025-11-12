@@ -71,3 +71,13 @@ export default defineConfig([
   },
 ])
 ```
+
+
+Farbpallete: 
+ganz dunkelgrün: #374142
+dunkelgrün: #4a5759
+hellgrün: #b0c4b1
+hellgrün-sand: #dedbd2
+sand: #f7e1d7
+rosa: #edafb8
+dunkel-grau: #343a40
